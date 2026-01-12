@@ -260,84 +260,102 @@ const Index = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <div>
               <img 
-                src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/files/ba58d17e-4c9a-4c95-9660-561a91a9c63f.jpg" 
-                alt="Фото работы 1" 
+                src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2026-01-12 at 14.25.48.jpeg" 
+                alt="Монтаж инженерных систем" 
                 style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
               />
-              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', marginTop: '12px' }}>Название работы 1</h3>
-              <p style={{ fontSize: '14px', color: '#6b7280' }}>Категория работы</p>
+              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', marginTop: '12px' }}>Монтаж системы отопления</h3>
+              <p style={{ fontSize: '14px', color: '#6b7280' }}>Отопление</p>
             </div>
             <div>
               <img 
-                src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/files/c32dc7b3-28be-4c50-8b8a-3c9a1c7e82cd.jpg" 
-                alt="Фото работы 2" 
+                src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2026-01-12 at 14.25.48 (1).jpeg" 
+                alt="Монтаж инженерных систем" 
                 style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
               />
-              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', marginTop: '12px' }}>Название работы 2</h3>
-              <p style={{ fontSize: '14px', color: '#6b7280' }}>Категория работы</p>
+              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', marginTop: '12px' }}>Установка оборудования</h3>
+              <p style={{ fontSize: '14px', color: '#6b7280' }}>Отопление</p>
             </div>
             <div>
               <img 
-                src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/files/9f386cf5-6b0c-4310-b542-57ab381eca0e.jpg" 
-                alt="Фото работы 3" 
+                src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2026-01-12 at 14.25.47.jpeg" 
+                alt="Монтаж инженерных систем" 
                 style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
               />
-              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', marginTop: '12px' }}>Название работы 3</h3>
-              <p style={{ fontSize: '14px', color: '#6b7280' }}>Категория работы</p>
+              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', marginTop: '12px' }}>Прокладка труб</h3>
+              <p style={{ fontSize: '14px', color: '#6b7280' }}>Водоснабжение</p>
             </div>
             <div>
               <img 
-                src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/files/66a3a06c-6dd6-4d31-aa0b-5bb2f3819525.jpg" 
-                alt="Фото работы 4" 
+                src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2026-01-12 at 14.25.47 (1).jpeg" 
+                alt="Монтаж инженерных систем" 
                 style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
               />
-              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', marginTop: '12px' }}>Название работы 4</h3>
-              <p style={{ fontSize: '14px', color: '#6b7280' }}>Категория работы</p>
+              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', marginTop: '12px' }}>Монтаж радиаторов</h3>
+              <p style={{ fontSize: '14px', color: '#6b7280' }}>Отопление</p>
             </div>
             <div>
               <img 
-                src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/files/2c689b4c-9970-49f2-a7a8-6425b0ae219f.jpg" 
-                alt="Фото работы 5" 
+                src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2025-11-13 at 19.16.12.jpeg" 
+                alt="Монтаж инженерных систем" 
                 style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
               />
-              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', marginTop: '12px' }}>Название работы 5</h3>
-              <p style={{ fontSize: '14px', color: '#6b7280' }}>Категория работы</p>
+              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', marginTop: '12px' }}>Электромонтажные работы</h3>
+              <p style={{ fontSize: '14px', color: '#6b7280' }}>Электроснабжение</p>
             </div>
             <div>
               <img 
-                src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/files/6a018705-992d-47ea-910a-b3504ea98357.jpg" 
-                alt="Фото работы 6" 
+                src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2025-11-13 at 19.16.09.jpeg" 
+                alt="Монтаж инженерных систем" 
                 style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
               />
-              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', marginTop: '12px' }}>Название работы 6</h3>
-              <p style={{ fontSize: '14px', color: '#6b7280' }}>Категория работы</p>
+              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', marginTop: '12px' }}>Система водоснабжения</h3>
+              <p style={{ fontSize: '14px', color: '#6b7280' }}>Водоснабжение</p>
             </div>
             <div>
               <img 
-                src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/files/e13a7d45-b08b-4d5d-b81b-326de2d305aa.jpg" 
-                alt="Фото работы 7" 
+                src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2025-11-13 at 19.16.01.jpeg" 
+                alt="Монтаж инженерных систем" 
                 style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
               />
-              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', marginTop: '12px' }}>Название работы 7</h3>
-              <p style={{ fontSize: '14px', color: '#6b7280' }}>Категория работы</p>
+              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', marginTop: '12px' }}>Котельная под ключ</h3>
+              <p style={{ fontSize: '14px', color: '#6b7280' }}>Отопление</p>
             </div>
             <div>
               <img 
-                src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/files/9d103940-01b7-439b-9de1-614c92a2ab94.jpg" 
-                alt="Фото работы 8" 
+                src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2025-11-13 at 19.16.00.jpeg" 
+                alt="Монтаж инженерных систем" 
                 style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
               />
-              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', marginTop: '12px' }}>Название работы 8</h3>
-              <p style={{ fontSize: '14px', color: '#6b7280' }}>Категория работы</p>
+              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', marginTop: '12px' }}>Разводка труб</h3>
+              <p style={{ fontSize: '14px', color: '#6b7280' }}>Водоснабжение</p>
             </div>
             <div>
               <img 
-                src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/files/c0ca714f-26f5-4381-9777-51cd3adc150f.jpg" 
-                alt="Фото работы 9" 
+                src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2025-10-29 at 16.48.15.jpeg" 
+                alt="Монтаж инженерных систем" 
                 style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
               />
-              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', marginTop: '12px' }}>Название работы 9</h3>
-              <p style={{ fontSize: '14px', color: '#6b7280' }}>Категория работы</p>
+              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', marginTop: '12px' }}>Канализация</h3>
+              <p style={{ fontSize: '14px', color: '#6b7280' }}>Канализация</p>
+            </div>
+            <div>
+              <img 
+                src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2025-06-23 at 11.47.18.jpeg" 
+                alt="Монтаж инженерных систем" 
+                style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
+              />
+              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', marginTop: '12px' }}>Электрощитовая</h3>
+              <p style={{ fontSize: '14px', color: '#6b7280' }}>Электроснабжение</p>
+            </div>
+            <div>
+              <img 
+                src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2025-06-23 at 11.47.10.jpeg" 
+                alt="Монтаж инженерных систем" 
+                style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
+              />
+              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', marginTop: '12px' }}>Монтаж коммуникаций</h3>
+              <p style={{ fontSize: '14px', color: '#6b7280' }}>Комплексные работы</p>
             </div>
           </div>
         </div>
