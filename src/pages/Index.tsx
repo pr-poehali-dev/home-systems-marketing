@@ -16,6 +16,14 @@ const Index = () => {
     message: ''
   });
 
+  const scrollToContact = () => {
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handlePhoneClick = () => {
+    window.location.href = 'tel:+79992683030';
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
@@ -100,7 +108,7 @@ const Index = () => {
               <a href="#portfolio" className="hover:text-primary transition-colors">Портфолио</a>
               <a href="#contact" className="hover:text-primary transition-colors">Контакты</a>
             </nav>
-            <Button className="hidden md:flex" size="lg">
+            <Button className="hidden md:flex" size="lg" onClick={handlePhoneClick}>
               <Icon name="Phone" size={18} className="mr-2" />
               +7 999 268-30-30
             </Button>
@@ -118,11 +126,11 @@ const Index = () => {
               Профессиональный монтаж электроснабжения, отопления, водоснабжения и канализации в частных домах. Работаем по всей России — надёжно, быстро, с гарантией.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-lg px-8 py-6">
+              <Button size="lg" className="text-lg px-8 py-6" onClick={scrollToContact}>
                 <Icon name="Calculator" size={20} className="mr-2" />
                 Получить расчёт бесплатно
               </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 py-6">
+              <Button size="lg" variant="outline" className="text-lg px-8 py-6" onClick={handlePhoneClick}>
                 <Icon name="Phone" size={20} className="mr-2" />
                 Позвонить нам
               </Button>
