@@ -6,6 +6,7 @@ interface Photo {
   url: string;
   title: string;
   category: string;
+  id: string;
 }
 
 interface PhotoGalleryProps {
@@ -42,22 +43,22 @@ const PhotoGallery = ({ photos }: PhotoGalleryProps) => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {photos.map((photo, index) => (
           <div
-            key={index}
-            className="group relative overflow-hidden rounded-lg cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300 animate-fade-in"
+            key={photo.id}
+            className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 animate-fade-in"
             style={{ animationDelay: `${index * 0.1}s` }}
-            onClick={() => openPhoto(photo, index)}
           >
-            <div className="aspect-[4/3] overflow-hidden">
+            <div className="aspect-[4/3] overflow-hidden cursor-pointer" onClick={() => openPhoto(photo, index)}>
               <img
                 src={photo.url}
                 alt={photo.title}
+                data-editable="image"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
             </div>
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
               <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
-                <p className="font-semibold text-lg mb-1">{photo.title}</p>
-                <p className="text-sm text-gray-200">{photo.category}</p>
+                <p className="font-semibold text-lg mb-1" data-editable="text">{photo.title}</p>
+                <p className="text-sm text-gray-200" data-editable="text">{photo.category}</p>
               </div>
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">

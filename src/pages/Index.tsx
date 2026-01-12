@@ -95,15 +95,15 @@ const Index = () => {
   ];
 
   const galleryPhotos = [
-    { url: 'https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800', title: 'Монтаж электрощитовой', category: 'Электроснабжение' },
-    { url: 'https://images.unsplash.com/photo-1581092918484-8313e1f151e6?w=800', title: 'Установка газового котла', category: 'Отопление' },
-    { url: 'https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=800', title: 'Разводка водоснабжения', category: 'Водоснабжение' },
-    { url: 'https://images.unsplash.com/photo-1581092583537-20d51876f3e5?w=800', title: 'Монтаж тёплого пола', category: 'Отопление' },
-    { url: 'https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?w=800', title: 'Установка септика', category: 'Канализация' },
-    { url: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=800', title: 'Подключение электрики', category: 'Электроснабжение' },
-    { url: 'https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800', title: 'Радиаторы отопления', category: 'Отопление' },
-    { url: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800', title: 'Система фильтрации воды', category: 'Водоснабжение' },
-    { url: 'https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=800', title: 'Прокладка труб', category: 'Водоснабжение' },
+    { url: 'https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800', title: 'Монтаж электрощитовой', category: 'Электроснабжение', id: 'photo-1' },
+    { url: 'https://images.unsplash.com/photo-1581092918484-8313e1f151e6?w=800', title: 'Установка газового котла', category: 'Отопление', id: 'photo-2' },
+    { url: 'https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=800', title: 'Разводка водоснабжения', category: 'Водоснабжение', id: 'photo-3' },
+    { url: 'https://images.unsplash.com/photo-1581092583537-20d51876f3e5?w=800', title: 'Монтаж тёплого пола', category: 'Отопление', id: 'photo-4' },
+    { url: 'https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?w=800', title: 'Установка септика', category: 'Канализация', id: 'photo-5' },
+    { url: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=800', title: 'Подключение электрики', category: 'Электроснабжение', id: 'photo-6' },
+    { url: 'https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800', title: 'Радиаторы отопления', category: 'Отопление', id: 'photo-7' },
+    { url: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800', title: 'Система фильтрации воды', category: 'Водоснабжение', id: 'photo-8' },
+    { url: 'https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=800', title: 'Прокладка труб', category: 'Водоснабжение', id: 'photo-9' },
   ];
 
   return (
