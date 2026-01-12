@@ -6,7 +6,6 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import Icon from '@/components/ui/icon';
 import { useToast } from '@/hooks/use-toast';
-import PhotoGallery from '@/components/PhotoGallery';
 
 const Index = () => {
   const { toast } = useToast();
@@ -94,18 +93,6 @@ const Index = () => {
     }
   ];
 
-  const galleryPhotos = [
-    { url: 'https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800', title: 'Монтаж электрощитовой', category: 'Электроснабжение', id: 'photo-1' },
-    { url: 'https://images.unsplash.com/photo-1581092918484-8313e1f151e6?w=800', title: 'Установка газового котла', category: 'Отопление', id: 'photo-2' },
-    { url: 'https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=800', title: 'Разводка водоснабжения', category: 'Водоснабжение', id: 'photo-3' },
-    { url: 'https://images.unsplash.com/photo-1581092583537-20d51876f3e5?w=800', title: 'Монтаж тёплого пола', category: 'Отопление', id: 'photo-4' },
-    { url: 'https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?w=800', title: 'Установка септика', category: 'Канализация', id: 'photo-5' },
-    { url: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=800', title: 'Подключение электрики', category: 'Электроснабжение', id: 'photo-6' },
-    { url: 'https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800', title: 'Радиаторы отопления', category: 'Отопление', id: 'photo-7' },
-    { url: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800', title: 'Система фильтрации воды', category: 'Водоснабжение', id: 'photo-8' },
-    { url: 'https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=800', title: 'Прокладка труб', category: 'Водоснабжение', id: 'photo-9' },
-  ];
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
@@ -119,7 +106,6 @@ const Index = () => {
               <a href="#services" className="hover:text-primary transition-colors">Услуги</a>
               <a href="#advantages" className="hover:text-primary transition-colors">Преимущества</a>
               <a href="#portfolio" className="hover:text-primary transition-colors">Портфолио</a>
-              <a href="#gallery" className="hover:text-primary transition-colors">Фото работ</a>
               <a href="#contact" className="hover:text-primary transition-colors">Контакты</a>
             </nav>
             <Button className="hidden md:flex" size="lg" onClick={handlePhoneClick}>
@@ -234,80 +220,6 @@ const Index = () => {
                 </CardContent>
               </Card>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="gallery" className="py-20 px-4 bg-gradient-to-b from-gray-50 to-white">
-        <div className="container mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Фотографии наших работ</h2>
-            <p className="text-xl text-gray-600">Примеры выполненных проектов</p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
-              <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800" alt="Монтаж электрощитовой" className="w-full h-64 object-cover" />
-              <CardHeader>
-                <CardTitle className="text-lg">Монтаж электрощитовой</CardTitle>
-                <CardDescription>Электроснабжение</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
-              <img src="https://images.unsplash.com/photo-1581092918484-8313e1f151e6?w=800" alt="Установка газового котла" className="w-full h-64 object-cover" />
-              <CardHeader>
-                <CardTitle className="text-lg">Установка газового котла</CardTitle>
-                <CardDescription>Отопление</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
-              <img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=800" alt="Разводка водоснабжения" className="w-full h-64 object-cover" />
-              <CardHeader>
-                <CardTitle className="text-lg">Разводка водоснабжения</CardTitle>
-                <CardDescription>Водоснабжение</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
-              <img src="https://images.unsplash.com/photo-1581092583537-20d51876f3e5?w=800" alt="Монтаж тёплого пола" className="w-full h-64 object-cover" />
-              <CardHeader>
-                <CardTitle className="text-lg">Монтаж тёплого пола</CardTitle>
-                <CardDescription>Отопление</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
-              <img src="https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?w=800" alt="Установка септика" className="w-full h-64 object-cover" />
-              <CardHeader>
-                <CardTitle className="text-lg">Установка септика</CardTitle>
-                <CardDescription>Канализация</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
-              <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=800" alt="Подключение электрики" className="w-full h-64 object-cover" />
-              <CardHeader>
-                <CardTitle className="text-lg">Подключение электрики</CardTitle>
-                <CardDescription>Электроснабжение</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
-              <img src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800" alt="Радиаторы отопления" className="w-full h-64 object-cover" />
-              <CardHeader>
-                <CardTitle className="text-lg">Радиаторы отопления</CardTitle>
-                <CardDescription>Отопление</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
-              <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800" alt="Система фильтрации воды" className="w-full h-64 object-cover" />
-              <CardHeader>
-                <CardTitle className="text-lg">Система фильтрации воды</CardTitle>
-                <CardDescription>Водоснабжение</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
-              <img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=800" alt="Прокладка труб" className="w-full h-64 object-cover" />
-              <CardHeader>
-                <CardTitle className="text-lg">Прокладка труб</CardTitle>
-                <CardDescription>Водоснабжение</CardDescription>
-              </CardHeader>
-            </Card>
           </div>
         </div>
       </section>
