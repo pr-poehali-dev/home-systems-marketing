@@ -6,6 +6,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import Icon from '@/components/ui/icon';
 import { useToast } from '@/hooks/use-toast';
+import { Dialog, DialogContent } from '@/components/ui/dialog';
 
 const Index = () => {
   const { toast } = useToast();
@@ -15,6 +16,31 @@ const Index = () => {
     service: '',
     message: ''
   });
+  const [selectedImage, setSelectedImage] = useState<number | null>(null);
+
+  const galleryImages = [
+    { src: 'https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/files/ba58d17e-4c9a-4c95-9660-561a91a9c63f.jpg', alt: 'Монтаж работ 1', title: 'Название работы 1', description: 'Категория работы' },
+    { src: 'https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/files/c32dc7b3-28be-4c50-8b8a-3c9a1c7e82cd.jpg', alt: 'Монтаж работ 2', title: 'Название работы 2', description: 'Категория работы' },
+    { src: 'https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/files/9f386cf5-6b0c-4310-b542-57ab381eca0e.jpg', alt: 'Монтаж работ 3', title: 'Название работы 3', description: 'Категория работы' },
+    { src: 'https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/files/66a3a06c-6dd6-4d31-aa0b-5bb2f3819525.jpg', alt: 'Монтаж работ 4', title: 'Название работы 4', description: 'Категория работы' },
+    { src: 'https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/files/2c689b4c-9970-49f2-a7a8-6425b0ae219f.jpg', alt: 'Монтаж работ 5', title: 'Название работы 5', description: 'Категория работы' },
+    { src: 'https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/files/6a018705-992d-47ea-910a-b3504ea98357.jpg', alt: 'Монтаж работ 6', title: 'Название работы 6', description: 'Категория работы' },
+    { src: 'https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/files/e13a7d45-b08b-4d5d-b81b-326de2d305aa.jpg', alt: 'Монтаж работ 7', title: 'Название работы 7', description: 'Категория работы' },
+    { src: 'https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/files/9d103940-01b7-439b-9de1-614c92a2ab94.jpg', alt: 'Монтаж работ 8', title: 'Название работы 8', description: 'Категория работы' },
+    { src: 'https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/files/c0ca714f-26f5-4381-9777-51cd3adc150f.jpg', alt: 'Монтаж работ 9', title: 'Название работы 9', description: 'Категория работы' }
+  ];
+
+  const nextImage = () => {
+    if (selectedImage !== null) {
+      setSelectedImage((selectedImage + 1) % galleryImages.length);
+    }
+  };
+
+  const prevImage = () => {
+    if (selectedImage !== null) {
+      setSelectedImage(selectedImage === 0 ? galleryImages.length - 1 : selectedImage - 1);
+    }
+  };
 
   const scrollToContact = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
@@ -232,88 +258,66 @@ const Index = () => {
             <p className="text-xl text-gray-600">Примеры выполненных проектов</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer">
-              <div className="overflow-hidden">
-                <img src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/files/ba58d17e-4c9a-4c95-9660-561a91a9c63f.jpg" alt="Монтаж работ 1" className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" />
-              </div>
-              <CardHeader>
-                <CardTitle className="text-lg">Название работы 1</CardTitle>
-                <CardDescription>Категория работы</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer">
-              <div className="overflow-hidden">
-                <img src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/files/c32dc7b3-28be-4c50-8b8a-3c9a1c7e82cd.jpg" alt="Монтаж работ 2" className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" />
-              </div>
-              <CardHeader>
-                <CardTitle className="text-lg">Название работы 2</CardTitle>
-                <CardDescription>Категория работы</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer">
-              <div className="overflow-hidden">
-                <img src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/files/9f386cf5-6b0c-4310-b542-57ab381eca0e.jpg" alt="Монтаж работ 3" className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" />
-              </div>
-              <CardHeader>
-                <CardTitle className="text-lg">Название работы 3</CardTitle>
-                <CardDescription>Категория работы</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer">
-              <div className="overflow-hidden">
-                <img src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/files/66a3a06c-6dd6-4d31-aa0b-5bb2f3819525.jpg" alt="Монтаж работ 4" className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" />
-              </div>
-              <CardHeader>
-                <CardTitle className="text-lg">Название работы 4</CardTitle>
-                <CardDescription>Категория работы</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer">
-              <div className="overflow-hidden">
-                <img src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/files/2c689b4c-9970-49f2-a7a8-6425b0ae219f.jpg" alt="Монтаж работ 5" className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" />
-              </div>
-              <CardHeader>
-                <CardTitle className="text-lg">Название работы 5</CardTitle>
-                <CardDescription>Категория работы</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer">
-              <div className="overflow-hidden">
-                <img src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/files/6a018705-992d-47ea-910a-b3504ea98357.jpg" alt="Монтаж работ 6" className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" />
-              </div>
-              <CardHeader>
-                <CardTitle className="text-lg">Название работы 6</CardTitle>
-                <CardDescription>Категория работы</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer">
-              <div className="overflow-hidden">
-                <img src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/files/e13a7d45-b08b-4d5d-b81b-326de2d305aa.jpg" alt="Монтаж работ 7" className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" />
-              </div>
-              <CardHeader>
-                <CardTitle className="text-lg">Название работы 7</CardTitle>
-                <CardDescription>Категория работы</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer">
-              <div className="overflow-hidden">
-                <img src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/files/9d103940-01b7-439b-9de1-614c92a2ab94.jpg" alt="Монтаж работ 8" className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" />
-              </div>
-              <CardHeader>
-                <CardTitle className="text-lg">Название работы 8</CardTitle>
-                <CardDescription>Категория работы</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer">
-              <div className="overflow-hidden">
-                <img src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/files/c0ca714f-26f5-4381-9777-51cd3adc150f.jpg" alt="Монтаж работ 9" className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" />
-              </div>
-              <CardHeader>
-                <CardTitle className="text-lg">Название работы 9</CardTitle>
-                <CardDescription>Категория работы</CardDescription>
-              </CardHeader>
-            </Card>
+            {galleryImages.map((image, index) => (
+              <Card key={index} className="group overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer" onClick={() => setSelectedImage(index)}>
+                <div className="overflow-hidden">
+                  <img src={image.src} alt={image.alt} className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" />
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-lg">{image.title}</CardTitle>
+                  <CardDescription>{image.description}</CardDescription>
+                </CardHeader>
+              </Card>
+            ))}
           </div>
+        </div>
+      </section>
+
+      <Dialog open={selectedImage !== null} onOpenChange={() => setSelectedImage(null)}>
+        <DialogContent className="max-w-[95vw] max-h-[95vh] p-0 bg-black/95 border-none">
+          {selectedImage !== null && (
+            <div className="relative w-full h-full flex flex-col">
+              <button
+                onClick={() => setSelectedImage(null)}
+                className="absolute top-4 right-4 z-50 w-10 h-10 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center transition-colors"
+              >
+                <Icon name="X" size={24} className="text-white" />
+              </button>
+
+              <div className="flex-1 flex items-center justify-center p-8">
+                <img
+                  src={galleryImages[selectedImage].src}
+                  alt={galleryImages[selectedImage].alt}
+                  className="max-w-full max-h-[80vh] object-contain"
+                />
+              </div>
+
+              <div className="bg-black/50 backdrop-blur-sm p-6 text-white">
+                <h3 className="text-xl font-semibold mb-2">{galleryImages[selectedImage].title}</h3>
+                <p className="text-gray-300">{galleryImages[selectedImage].description}</p>
+              </div>
+
+              <button
+                onClick={(e) => { e.stopPropagation(); prevImage(); }}
+                className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center transition-colors"
+              >
+                <Icon name="ChevronLeft" size={28} className="text-white" />
+              </button>
+
+              <button
+                onClick={(e) => { e.stopPropagation(); nextImage(); }}
+                className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center transition-colors"
+              >
+                <Icon name="ChevronRight" size={28} className="text-white" />
+              </button>
+
+              <div className="absolute bottom-32 left-1/2 -translate-x-1/2 text-white text-sm">
+                {selectedImage + 1} / {galleryImages.length}
+              </div>
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
         </div>
       </section>
 
