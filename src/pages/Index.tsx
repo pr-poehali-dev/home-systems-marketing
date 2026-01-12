@@ -242,9 +242,73 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Фотографии наших работ</h2>
-            <p className="text-xl text-gray-600">Нажмите на фото, чтобы увеличить</p>
+            <p className="text-xl text-gray-600">Примеры выполненных проектов</p>
           </div>
-          <PhotoGallery photos={galleryPhotos} />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800" alt="Монтаж электрощитовой" className="w-full h-64 object-cover" />
+              <CardHeader>
+                <CardTitle className="text-lg">Монтаж электрощитовой</CardTitle>
+                <CardDescription>Электроснабжение</CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <img src="https://images.unsplash.com/photo-1581092918484-8313e1f151e6?w=800" alt="Установка газового котла" className="w-full h-64 object-cover" />
+              <CardHeader>
+                <CardTitle className="text-lg">Установка газового котла</CardTitle>
+                <CardDescription>Отопление</CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=800" alt="Разводка водоснабжения" className="w-full h-64 object-cover" />
+              <CardHeader>
+                <CardTitle className="text-lg">Разводка водоснабжения</CardTitle>
+                <CardDescription>Водоснабжение</CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <img src="https://images.unsplash.com/photo-1581092583537-20d51876f3e5?w=800" alt="Монтаж тёплого пола" className="w-full h-64 object-cover" />
+              <CardHeader>
+                <CardTitle className="text-lg">Монтаж тёплого пола</CardTitle>
+                <CardDescription>Отопление</CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <img src="https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?w=800" alt="Установка септика" className="w-full h-64 object-cover" />
+              <CardHeader>
+                <CardTitle className="text-lg">Установка септика</CardTitle>
+                <CardDescription>Канализация</CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=800" alt="Подключение электрики" className="w-full h-64 object-cover" />
+              <CardHeader>
+                <CardTitle className="text-lg">Подключение электрики</CardTitle>
+                <CardDescription>Электроснабжение</CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <img src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800" alt="Радиаторы отопления" className="w-full h-64 object-cover" />
+              <CardHeader>
+                <CardTitle className="text-lg">Радиаторы отопления</CardTitle>
+                <CardDescription>Отопление</CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800" alt="Система фильтрации воды" className="w-full h-64 object-cover" />
+              <CardHeader>
+                <CardTitle className="text-lg">Система фильтрации воды</CardTitle>
+                <CardDescription>Водоснабжение</CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=800" alt="Прокладка труб" className="w-full h-64 object-cover" />
+              <CardHeader>
+                <CardTitle className="text-lg">Прокладка труб</CardTitle>
+                <CardDescription>Водоснабжение</CardDescription>
+              </CardHeader>
+            </Card>
+          </div>
         </div>
       </section>
 
