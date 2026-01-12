@@ -54,23 +54,79 @@ const Index = () => {
     {
       title: 'Загородный дом 250 м²',
       description: 'Полный монтаж всех инженерных систем: электричество, отопление, вода, канализация',
-      image: 'https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/files/276c249a-08cc-4b62-b194-0c89295d5c1b.jpg',
+      image: 'https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2026-01-12 at 19.32.27.jpeg',
       duration: '45 дней',
       systems: ['Электроснабжение', 'Отопление', 'Водоснабжение', 'Канализация']
     },
     {
       title: 'Коттедж 180 м²',
       description: 'Автономное электроснабжение с солнечными панелями и система водоочистки',
-      image: 'https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/files/b71ba7c9-c6d7-41e6-9896-14ebc97022a9.jpg',
+      image: 'https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2026-01-12 at 19.32.26 (1).jpeg',
       duration: '30 дней',
       systems: ['Электроснабжение', 'Водоснабжение']
     },
     {
       title: 'Дом 320 м²',
       description: 'Газовое отопление с тёплыми полами, септик и дренажная система',
-      image: 'https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/files/ff353b2e-b91f-4335-9d61-12acc7ef2bb2.jpg',
+      image: 'https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2026-01-12 at 19.32.25.jpeg',
       duration: '60 дней',
       systems: ['Отопление', 'Канализация']
+    },
+    {
+      title: 'Дом 200 м²',
+      description: 'Комплексный монтаж инженерных систем',
+      image: 'https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2026-01-12 at 19.32.25 (1).jpeg',
+      duration: '35 дней',
+      systems: ['Электроснабжение', 'Отопление']
+    },
+    {
+      title: 'Загородный дом 280 м²',
+      description: 'Установка системы водоснабжения и канализации',
+      image: 'https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2026-01-12 at 19.32.24.jpeg',
+      duration: '40 дней',
+      systems: ['Водоснабжение', 'Канализация']
+    },
+    {
+      title: 'Коттедж 220 м²',
+      description: 'Электромонтажные работы и отопление',
+      image: 'https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2026-01-12 at 19.32.23.jpeg',
+      duration: '38 дней',
+      systems: ['Электроснабжение', 'Отопление']
+    },
+    {
+      title: 'Дом 300 м²',
+      description: 'Полный цикл инженерных работ',
+      image: 'https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2026-01-12 at 19.32.22.jpeg',
+      duration: '50 дней',
+      systems: ['Электроснабжение', 'Отопление', 'Водоснабжение', 'Канализация']
+    },
+    {
+      title: 'Загородный дом 190 м²',
+      description: 'Монтаж систем отопления и водоснабжения',
+      image: 'https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2026-01-12 at 19.32.21.jpeg',
+      duration: '32 дня',
+      systems: ['Отопление', 'Водоснабжение']
+    },
+    {
+      title: 'Коттедж 260 м²',
+      description: 'Установка электроснабжения и канализации',
+      image: 'https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2026-01-12 at 19.32.20 (1).jpeg',
+      duration: '42 дня',
+      systems: ['Электроснабжение', 'Канализация']
+    },
+    {
+      title: 'Дом 240 м²',
+      description: 'Комплексное инженерное обеспечение',
+      image: 'https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2026-01-12 at 19.32.26.jpeg',
+      duration: '44 дня',
+      systems: ['Электроснабжение', 'Отопление', 'Водоснабжение']
+    },
+    {
+      title: 'Загородный дом 210 м²',
+      description: 'Монтаж всех коммуникаций',
+      image: 'https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2026-01-12 at 19.32.20.jpeg',
+      duration: '36 дней',
+      systems: ['Электроснабжение', 'Отопление', 'Водоснабжение', 'Канализация']
     }
   ];
 
