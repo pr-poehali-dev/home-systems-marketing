@@ -258,105 +258,61 @@ const Index = () => {
             <p className="text-xl text-gray-600">Примеры выполненных проектов</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div>
-              <img 
-                src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2026-01-12 at 14.25.48.jpeg" 
-                alt="Монтаж инженерных систем" 
-                style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
-              />
-              <h3 className="text-lg font-semibold text-gray-900 mt-3">Монтаж системы отопления</h3>
-              <p className="text-sm text-gray-600">Отопление</p>
-            </div>
-            <div>
-              <img 
-                src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2026-01-12 at 14.25.48 (1).jpeg" 
-                alt="Монтаж инженерных систем" 
-                style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
-              />
-              <h3 className="text-lg font-semibold text-gray-900 mt-3">Установка оборудования</h3>
-              <p className="text-sm text-gray-600">Отопление</p>
-            </div>
-            <div>
-              <img 
-                src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2026-01-12 at 14.25.47.jpeg" 
-                alt="Монтаж инженерных систем" 
-                style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
-              />
-              <h3 className="text-lg font-semibold text-gray-900 mt-3">Прокладка труб</h3>
-              <p className="text-sm text-gray-600">Водоснабжение</p>
-            </div>
-            <div>
-              <img 
-                src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2026-01-12 at 14.25.47 (1).jpeg" 
-                alt="Монтаж инженерных систем" 
-                style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
-              />
-              <h3 className="text-lg font-semibold text-gray-900 mt-3">Монтаж радиаторов</h3>
-              <p className="text-sm text-gray-600">Отопление</p>
-            </div>
-            <div>
-              <img 
-                src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2025-11-13 at 19.16.12.jpeg" 
-                alt="Монтаж инженерных систем" 
-                style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
-              />
-              <h3 className="text-lg font-semibold text-gray-900 mt-3">Электромонтажные работы</h3>
-              <p className="text-sm text-gray-600">Электроснабжение</p>
-            </div>
-            <div>
-              <img 
-                src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2025-11-13 at 19.16.09.jpeg" 
-                alt="Монтаж инженерных систем" 
-                style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
-              />
-              <h3 className="text-lg font-semibold text-gray-900 mt-3">Система водоснабжения</h3>
-              <p className="text-sm text-gray-600">Водоснабжение</p>
-            </div>
-            <div>
-              <img 
-                src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2025-11-13 at 19.16.01.jpeg" 
-                alt="Монтаж инженерных систем" 
-                style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
-              />
-              <h3 className="text-lg font-semibold text-gray-900 mt-3">Котельная под ключ</h3>
-              <p className="text-sm text-gray-600">Отопление</p>
-            </div>
-            <div>
-              <img 
-                src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2025-11-13 at 19.16.00.jpeg" 
-                alt="Монтаж инженерных систем" 
-                style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
-              />
-              <h3 className="text-lg font-semibold text-gray-900 mt-3">Разводка труб</h3>
-              <p className="text-sm text-gray-600">Водоснабжение</p>
-            </div>
-            <div>
-              <img 
-                src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2025-10-29 at 16.48.15.jpeg" 
-                alt="Монтаж инженерных систем" 
-                style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
-              />
-              <h3 className="text-lg font-semibold text-gray-900 mt-3">Канализация</h3>
-              <p className="text-sm text-gray-600">Канализация</p>
-            </div>
-            <div>
-              <img 
-                src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2025-06-23 at 11.47.18.jpeg" 
-                alt="Монтаж инженерных систем" 
-                style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
-              />
-              <h3 className="text-lg font-semibold text-gray-900 mt-3">Электрощитовая</h3>
-              <p className="text-sm text-gray-600">Электроснабжение</p>
-            </div>
-            <div>
-              <img 
-                src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2025-06-23 at 11.47.10.jpeg" 
-                alt="Монтаж инженерных систем" 
-                style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
-              />
-              <h3 className="text-lg font-semibold text-gray-900 mt-3">Монтаж коммуникаций</h3>
-              <p className="text-sm text-gray-600">Комплексные работы</p>
-            </div>
+            <img 
+              src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2026-01-12 at 14.25.48.jpeg" 
+              alt="Монтаж инженерных систем" 
+              style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
+            />
+            <img 
+              src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2026-01-12 at 14.25.48 (1).jpeg" 
+              alt="Монтаж инженерных систем" 
+              style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
+            />
+            <img 
+              src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2026-01-12 at 14.25.47.jpeg" 
+              alt="Монтаж инженерных систем" 
+              style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
+            />
+            <img 
+              src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2026-01-12 at 14.25.47 (1).jpeg" 
+              alt="Монтаж инженерных систем" 
+              style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
+            />
+            <img 
+              src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2025-11-13 at 19.16.12.jpeg" 
+              alt="Монтаж инженерных систем" 
+              style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
+            />
+            <img 
+              src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b6f-5b8473b21b21/bucket/WhatsApp Image 2025-11-13 at 19.16.09.jpeg" 
+              alt="Монтаж инженерных систем" 
+              style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
+            />
+            <img 
+              src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2025-11-13 at 19.16.01.jpeg" 
+              alt="Монтаж инженерных систем" 
+              style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
+            />
+            <img 
+              src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2025-11-13 at 19.16.00.jpeg" 
+              alt="Монтаж инженерных систем" 
+              style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
+            />
+            <img 
+              src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2025-10-29 at 16.48.15.jpeg" 
+              alt="Монтаж инженерных систем" 
+              style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
+            />
+            <img 
+              src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2025-06-23 at 11.47.18.jpeg" 
+              alt="Монтаж инженерных систем" 
+              style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
+            />
+            <img 
+              src="https://cdn.poehali.dev/projects/4893db6d-5019-44d3-8b6f-5b8473b21b21/bucket/WhatsApp Image 2025-06-23 at 11.47.10.jpeg" 
+              alt="Монтаж инженерных систем" 
+              style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
+            />
           </div>
         </div>
       </section>
