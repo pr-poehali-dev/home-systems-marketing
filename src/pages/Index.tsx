@@ -128,17 +128,35 @@ const Index = () => {
               <Icon name="Wrench" className="text-primary" size={32} />
               <span className="text-2xl font-bold text-primary">МонтажСервис</span>
             </div>
-            <nav className="hidden md:flex gap-6">
+            <nav className="hidden md:flex gap-6 items-center">
               <a href="#services" className="hover:text-primary transition-colors">Услуги</a>
               <a href="#advantages" className="hover:text-primary transition-colors">Преимущества</a>
               <a href="#portfolio" className="hover:text-primary transition-colors">Портфолио</a>
               <a href="#gallery" className="hover:text-primary transition-colors">Фото работ</a>
               <a href="#contact" className="hover:text-primary transition-colors">Контакты</a>
             </nav>
-            <Button className="hidden md:flex" size="lg" onClick={handlePhoneClick}>
-              <Icon name="Phone" size={18} className="mr-2" />
-              +7 999 268-30-30
-            </Button>
+            <div className="hidden md:flex items-center gap-3">
+              <a 
+                href="https://wa.me/79992683030" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center transition-colors"
+              >
+                <Icon name="MessageCircle" size={20} className="text-white" />
+              </a>
+              <a 
+                href="https://t.me/+79992683030" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-blue-500 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors"
+              >
+                <Icon name="Send" size={20} className="text-white" />
+              </a>
+              <Button size="lg" onClick={handlePhoneClick}>
+                <Icon name="Phone" size={18} className="mr-2" />
+                +7 999 268-30-30
+              </Button>
+            </div>
           </div>
         </div>
       </header>
@@ -161,6 +179,26 @@ const Index = () => {
                 <Icon name="Phone" size={20} className="mr-2" />
                 Позвонить нам
               </Button>
+            </div>
+            <div className="flex gap-4 justify-center mt-6">
+              <a 
+                href="https://wa.me/79992683030" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-6 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg transition-colors"
+              >
+                <Icon name="MessageCircle" size={20} />
+                <span>WhatsApp</span>
+              </a>
+              <a 
+                href="https://t.me/+79992683030" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors"
+              >
+                <Icon name="Send" size={20} />
+                <span>Telegram</span>
+              </a>
             </div>
           </div>
         </div>
@@ -484,6 +522,45 @@ const Index = () => {
                 <CardContent>
                   <a href="mailto:montazh_rt@mail.ru" className="text-lg text-primary hover:underline">
                     montazh_rt@mail.ru
+                  </a>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Icon name="MessageSquare" className="text-primary" />
+                    Мессенджеры
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-3">
+                  <a 
+                    href="https://wa.me/79992683030" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-3 bg-green-50 hover:bg-green-100 rounded-lg transition-colors"
+                  >
+                    <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
+                      <Icon name="MessageCircle" size={20} className="text-white" />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-900">WhatsApp</p>
+                      <p className="text-sm text-gray-600">Написать в WhatsApp</p>
+                    </div>
+                  </a>
+                  <a 
+                    href="https://t.me/+79992683030" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-3 bg-blue-50 hover:bg-blue-100 rounded-lg transition-colors"
+                  >
+                    <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
+                      <Icon name="Send" size={20} className="text-white" />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-900">Telegram</p>
+                      <p className="text-sm text-gray-600">Написать в Telegram</p>
+                    </div>
                   </a>
                 </CardContent>
               </Card>
