@@ -264,8 +264,8 @@ const Index = () => {
                 alt="Монтаж инженерных систем" 
                 style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
               />
-              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', marginTop: '12px' }}>Монтаж системы отопления</h3>
-              <p style={{ fontSize: '14px', color: '#6b7280' }}>Отопление</p>
+              <h3 className="text-lg font-semibold text-gray-900 mt-3">Монтаж системы отопления</h3>
+              <p className="text-sm text-gray-600">Отопление</p>
             </div>
             <div>
               <img 
@@ -273,8 +273,8 @@ const Index = () => {
                 alt="Монтаж инженерных систем" 
                 style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
               />
-              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', marginTop: '12px' }}>Установка оборудования</h3>
-              <p style={{ fontSize: '14px', color: '#6b7280' }}>Отопление</p>
+              <h3 className="text-lg font-semibold text-gray-900 mt-3">Установка оборудования</h3>
+              <p className="text-sm text-gray-600">Отопление</p>
             </div>
             <div>
               <img 
@@ -282,8 +282,8 @@ const Index = () => {
                 alt="Монтаж инженерных систем" 
                 style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
               />
-              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', marginTop: '12px' }}>Прокладка труб</h3>
-              <p style={{ fontSize: '14px', color: '#6b7280' }}>Водоснабжение</p>
+              <h3 className="text-lg font-semibold text-gray-900 mt-3">Прокладка труб</h3>
+              <p className="text-sm text-gray-600">Водоснабжение</p>
             </div>
             <div>
               <img 
@@ -291,8 +291,8 @@ const Index = () => {
                 alt="Монтаж инженерных систем" 
                 style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
               />
-              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', marginTop: '12px' }}>Монтаж радиаторов</h3>
-              <p style={{ fontSize: '14px', color: '#6b7280' }}>Отопление</p>
+              <h3 className="text-lg font-semibold text-gray-900 mt-3">Монтаж радиаторов</h3>
+              <p className="text-sm text-gray-600">Отопление</p>
             </div>
             <div>
               <img 
@@ -300,8 +300,8 @@ const Index = () => {
                 alt="Монтаж инженерных систем" 
                 style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
               />
-              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', marginTop: '12px' }}>Электромонтажные работы</h3>
-              <p style={{ fontSize: '14px', color: '#6b7280' }}>Электроснабжение</p>
+              <h3 className="text-lg font-semibold text-gray-900 mt-3">Электромонтажные работы</h3>
+              <p className="text-sm text-gray-600">Электроснабжение</p>
             </div>
             <div>
               <img 
@@ -309,8 +309,8 @@ const Index = () => {
                 alt="Монтаж инженерных систем" 
                 style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
               />
-              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', marginTop: '12px' }}>Система водоснабжения</h3>
-              <p style={{ fontSize: '14px', color: '#6b7280' }}>Водоснабжение</p>
+              <h3 className="text-lg font-semibold text-gray-900 mt-3">Система водоснабжения</h3>
+              <p className="text-sm text-gray-600">Водоснабжение</p>
             </div>
             <div>
               <img 
@@ -318,8 +318,8 @@ const Index = () => {
                 alt="Монтаж инженерных систем" 
                 style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
               />
-              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', marginTop: '12px' }}>Котельная под ключ</h3>
-              <p style={{ fontSize: '14px', color: '#6b7280' }}>Отопление</p>
+              <h3 className="text-lg font-semibold text-gray-900 mt-3">Котельная под ключ</h3>
+              <p className="text-sm text-gray-600">Отопление</p>
             </div>
             <div>
               <img 
@@ -327,8 +327,8 @@ const Index = () => {
                 alt="Монтаж инженерных систем" 
                 style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
               />
-              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', marginTop: '12px' }}>Разводка труб</h3>
-              <p style={{ fontSize: '14px', color: '#6b7280' }}>Водоснабжение</p>
+              <h3 className="text-lg font-semibold text-gray-900 mt-3">Разводка труб</h3>
+              <p className="text-sm text-gray-600">Водоснабжение</p>
             </div>
             <div>
               <img 
@@ -336,8 +336,8 @@ const Index = () => {
                 alt="Монтаж инженерных систем" 
                 style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
               />
-              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', marginTop: '12px' }}>Канализация</h3>
-              <p style={{ fontSize: '14px', color: '#6b7280' }}>Канализация</p>
+              <h3 className="text-lg font-semibold text-gray-900 mt-3">Канализация</h3>
+              <p className="text-sm text-gray-600">Канализация</p>
             </div>
             <div>
               <img 
@@ -345,8 +345,8 @@ const Index = () => {
                 alt="Монтаж инженерных систем" 
                 style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
               />
-              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', marginTop: '12px' }}>Электрощитовая</h3>
-              <p style={{ fontSize: '14px', color: '#6b7280' }}>Электроснабжение</p>
+              <h3 className="text-lg font-semibold text-gray-900 mt-3">Электрощитовая</h3>
+              <p className="text-sm text-gray-600">Электроснабжение</p>
             </div>
             <div>
               <img 
@@ -354,8 +354,8 @@ const Index = () => {
                 alt="Монтаж инженерных систем" 
                 style={{ width: '100%', height: '256px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
               />
-              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', marginTop: '12px' }}>Монтаж коммуникаций</h3>
-              <p style={{ fontSize: '14px', color: '#6b7280' }}>Комплексные работы</p>
+              <h3 className="text-lg font-semibold text-gray-900 mt-3">Монтаж коммуникаций</h3>
+              <p className="text-sm text-gray-600">Комплексные работы</p>
             </div>
           </div>
         </div>
